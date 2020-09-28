@@ -1,0 +1,30 @@
+#menu{
+ width: 800px;
+ height: 200px;
+ margin: auto;
+ background: #f0f0f0;
+}
+#menu ul{
+ padding: 0;
+ background: #369;
+ font-size: 0;
+}
+#menu li{
+ list-style-type: none;
+ display: inline-block;
+ height: 50px;  
+ font-size: 1rem;  
+}
+#menu li a{
+ color: #fff;
+ font-family: sans-serif;  
+ text-decoration: none;
+ float: left;
+ height: 50px;
+ line-height: 50px;
+ text-transform: uppercase;
+ padding: 0 10px;
+}
+#menu li a:hover{
+  background: #9fc4e8;
+}

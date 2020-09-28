@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Селекторы псевдоклассов</title>
+<style type="text/css">
+div{
+ padding: 10px 50px;
+}
+/*:target :empty :enabled :disabled*/
+  h2:target{
+    background: #999;
+  }
+  [id^=page]{display: none;}
+  [id^=page]:target{
+    display: block;
+  }
+  
+/*
+  :empty{
+    border: 10px dotted red;
+  }
+*/
+  input[type=text]:enabled{ border: 1px solid green; }
+  [type=button]:disabled  { border: 1px solid #999; }
+  [type=button]:enabled   { border: 1px solid pink; }
+  </style>
+</head>
+<body>
+<div></div>
+
+<input type="text" />
+<input type="button" value='Кнопка' disabled />
+
+<!--    nav>a[#page$]{Страница $}*4-->
+    <nav>
+      <a href="#page1">Страница 1</a>
+      <a href="#page2">Страница 2</a>
+      <a href="#page3">Страница 3</a>
+      <a href="#page4">Страница 4</a>
+    </nav>
+
+<!--	(h2#page${Заголовок $}+p>lorem50)*3-->
+<!--	(#page$>h2{Заголовок $}+p>lorem50)*3-->
+	<div id="page1">
+	  <h2>Заголовок 1</h2>
+	  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A sunt totam, deleniti, similique, aliquam illum ipsam eos placeat nisi commodi cum, expedita officiis ex? Rem maxime omnis repellat, doloribus ipsam non dolor cupiditate eveniet reiciendis. Ex suscipit obcaecati eligendi officiis quibusdam quaerat possimus nam, at odit, error officia cum non.</p>
+	</div>
+	<div id="page2">
+	  <h2>Заголовок 2</h2>
+	  <p>Ratione cum, dolorem quas corrupti omnis officia suscipit sapiente aliquid, a, itaque, saepe? Non minus officiis qui, nostrum quaerat dolore repellat veniam modi accusantium similique quae voluptas molestias, doloremque, dignissimos officia reprehenderit laboriosam eveniet cupiditate cum distinctio rem repudiandae. Hic minus veritatis, odit itaque. Ut error tempora itaque ad delectus?</p>
+	</div>
+	<div id="page3">
+	  <h2>Заголовок 3</h2>
+	  <p>Ab nobis nemo repellat fugit, praesentium vel. Consequatur obcaecati quas minus qui fugiat veniam molestias quidem dolores non beatae odio neque fuga repudiandae illum laborum alias placeat, asperiores, vitae praesentium. Consequuntur praesentium dignissimos, vero explicabo error ea recusandae atque natus sunt ab voluptas molestiae sit. Porro minus sunt, facilis ipsum.</p>
+	</div>
+	
+</body>
+</html>

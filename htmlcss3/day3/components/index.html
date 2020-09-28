@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Components</title>
+    <style></style>
+</head>
+<body>
+    <!--nav>ul>li*5>a>{link $}-->
+    <template>
+        <nav>
+            <ul>
+                <li><a href="">link 1</a></li>
+                <li><a href="">link 2</a></li>
+                <li><a href="">link 3</a></li>
+                <li><a href="">link 4</a></li>
+                <li><a href="">link 5</a></li>
+            </ul>
+        </nav>
+    </template>
+    <my-menu></my-menu>
+    <h1>Components</h1>
+    <div id="menu"></div>
+    <!--p>lorem100-->
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. At eligendi, error, esse iste libero minus natus, neque nihil nulla officia omnis ratione sapiente voluptatem. Corporis culpa cumque delectus dolores eveniet ipsum maxime nihil, nisi nobis obcaecati quis recusandae similique soluta. Accusamus at nemo porro veniam! Aliquid dolorum eligendi, esse perferendis possimus sed soluta voluptatem. A ad alias amet animi aperiam architecto aspernatur deserunt dicta doloribus ea eius facere facilis fugit hic inventore ipsum iste libero minus, molestias nam natus necessitatibus nemo neque nihil non numquam odio pariatur porro possimus praesentium quaerat quo repellat, tempore temporibus tenetur totam ut. Perspiciatis, quae.</p>
+    <my-menu></my-menu>
+    <script>
+        let templ = document.querySelector("template");
+        let nodes = templ.content.cloneNode(true);
+        document.getElementById("menu").appendChild(nodes);
+        /************************************************/
+        let proto = Object.create(HTMLElement.prototype);
+        proto.createdCallback = function() {
+            this.innerHTML = "<nav>" +
+                    "            <ul>" +
+                    "                <li><a href=\"\">link 1</a></li>" +
+                    "                <li><a href=\"\">link 2</a></li>" +
+                    "                <li><a href=\"\">link 3</a></li>" +
+                    "                <li><a href=\"\">link 4</a></li>" +
+                    "                <li><a href=\"\">link 5</a></li>" +
+                    "            </ul>" +
+                    "        </nav>";
+        };
+        let el = document.registerElement("my-menu", {
+            prototype: proto
+        });
+
+
+
+
+    </script>
+</body>
+</html>

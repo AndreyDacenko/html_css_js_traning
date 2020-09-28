@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Селекторы псевдоклассов</title>
+<style type="text/css">
+div{
+ padding: 10px 50px;
+}
+/*:first-child :last-child :last-of-type :first-of-type*/
+  p:first-child{background: #f96; }
+  p:last-child{background: #69f; }
+  p:first-of-type{ font-size: 24px; }
+  p:last-of-type{ font-size: 24px; }
+
+  li:nth-child(2){background: pink;}
+  li:nth-child(odd){background: lightgreen;}
+  li:nth-child(even){background: yellow;}
+  
+  li:nth-child(2n){ font-size: 30px; }
+  li:nth-child(2n+1){ font-size: 3px; }
+  
+  .table tr:nth-child(odd){
+    background: rgba(120,140,180,.4);
+  }
+  .table tr:nth-child(even){
+    background: rgba(180,140,120,.4);
+  }
+  .table tr:hover td{
+    color: #999;
+    text-decoration: underline;
+  }
+  .table-border th,
+  .table-border td { border: 1px solid #555; }
+  
+  .chess td{  background: #ffc; }
+  
+  .chess tr:nth-child(odd) td:nth-child(odd),
+  .chess tr:nth-child(even) td:nth-child(even){ 
+    background: #369; color: #fff;
+  }
+  
+</style>
+</head>
+<body>
+   
+   table.chess>tr*8>td*8>{t$}
+   <table class="chess">
+     <tr>
+       <td>t1</td>
+       <td>t2</td>
+       <td>t3</td>
+       <td>t4</td>
+       <td>t5</td>
+       <td>t6</td>
+       <td>t7</td>
+       <td>t8</td>
+     </tr>
+     <tr>
+       <td>t1</td>
+       <td>t2</td>
+       <td>t3</td>
+       <td>t4</td>
+       <td>t5</td>
+       <td>t6</td>
+       <td>t7</td>
+       <td>t8</td>
+     </tr>
+     <tr>
+       <td>t1</td>
+       <td>t2</td>
+       <td>t3</td>
+       <td>t4</td>
+       <td>t5</td>
+       <td>t6</td>
+       <td>t7</td>
+       <td>t8</td>
+     </tr>
+     <tr>
+       <td>t1</td>
+       <td>t2</td>
+       <td>t3</td>
+       <td>t4</td>
+       <td>t5</td>
+       <td>t6</td>
+       <td>t7</td>
+       <td>t8</td>
+     </tr>
+     <tr>
+       <td>t1</td>
+       <td>t2</td>
+       <td>t3</td>
+       <td>t4</td>
+       <td>t5</td>
+       <td>t6</td>
+       <td>t7</td>
+       <td>t8</td>
+     </tr>
+     <tr>
+       <td>t1</td>
+       <td>t2</td>
+       <td>t3</td>
+       <td>t4</td>
+       <td>t5</td>
+       <td>t6</td>
+       <td>t7</td>
+       <td>t8</td>
+     </tr>
+     <tr>
+       <td>t1</td>
+       <td>t2</td>
+       <td>t3</td>
+       <td>t4</td>
+       <td>t5</td>
+       <td>t6</td>
+       <td>t7</td>
+       <td>t8</td>
+     </tr>
+     <tr>
+       <td>t1</td>
+       <td>t2</td>
+       <td>t3</td>
+       <td>t4</td>
+       <td>t5</td>
+       <td>t6</td>
+       <td>t7</td>
+       <td>t8</td>
+     </tr>
+   </table>
+   
+    table.table.table-border>tr*30>td*2>{text$}
+    <table class="table table-border">
+      <tr>
+        <td>text1</td>
+        <td>text2</td>
+      </tr>
+      <tr>
+        <td>text1</td>
+        <td>text2</td>
+      </tr>
+      <tr>
+        <td>text1</td>
+        <td>text2</td>
+      </tr>
+      <tr>
+        <td>text1</td>
+        <td>text2</td>
+      </tr>
+      <tr>
+        <td>text1</td>
+        <td>text2</td>
+      </tr>
+      <tr>
+        <td>text1</td>
+        <td>text2</td>
+      </tr>
+      <tr>
+        <td>text1</td>
+        <td>text2</td>
+      </tr>
+      <tr>
+        <td>text1</td>
+        <td>text2</td>
+      </tr>
+      <tr>
+        <td>text1</td>
+        <td>text2</td>
+      </tr>
+      <tr>
+        <td>text1</td>
+        <td>text2</td>
+      </tr>
+      <tr>
+        <td>text1</td>
+        <td>text2</td>
+      </tr>
+      <tr>
+        <td>text1</td>
+        <td>text2</td>
+      </tr>
+      <tr>
+        <td>text1</td>
+        <td>text2</td>
+      </tr>
+      <tr>
+        <td>text1</td>
+        <td>text2</td>
+      </tr>
+      <tr>
+        <td>text1</td>
+        <td>text2</td>
+      </tr>
+      <tr>
+        <td>text1</td>
+        <td>text2</td>
+      </tr>
+      <tr>
+        <td>text1</td>
+        <td>text2</td>
+      </tr>
+      <tr>
+        <td>text1</td>
+        <td>text2</td>
+      </tr>
+      <tr>
+        <td>text1</td>
+        <td>text2</td>
+      </tr>
+      <tr>
+        <td>text1</td>
+        <td>text2</td>
+      </tr>
+      <tr>
+        <td>text1</td>
+        <td>text2</td>
+      </tr>
+      <tr>
+        <td>text1</td>
+        <td>text2</td>
+      </tr>
+      <tr>
+        <td>text1</td>
+        <td>text2</td>
+      </tr>
+      <tr>
+        <td>text1</td>
+        <td>text2</td>
+      </tr>
+      <tr>
+        <td>text1</td>
+        <td>text2</td>
+      </tr>
+      <tr>
+        <td>text1</td>
+        <td>text2</td>
+      </tr>
+      <tr>
+        <td>text1</td>
+        <td>text2</td>
+      </tr>
+      <tr>
+        <td>text1</td>
+        <td>text2</td>
+      </tr>
+      <tr>
+        <td>text1</td>
+        <td>text2</td>
+      </tr>
+      <tr>
+        <td>text1</td>
+        <td>text2</td>
+      </tr>
+    </table>    
+   
+   
+    ul>li*10>a[href=#]{Ссылка $}
+    <ul>
+      <li><a href="#">Ссылка 1</a></li>
+      <li><a href="#">Ссылка 2</a></li>
+      <li><a href="#">Ссылка 3</a></li>
+      <li><a href="#">Ссылка 4</a></li>
+      <li><a href="#">Ссылка 5</a></li>
+      <li><a href="#">Ссылка 6</a></li>
+      <li><a href="#">Ссылка 7</a></li>
+      <li><a href="#">Ссылка 8</a></li>
+      <li><a href="#">Ссылка 9</a></li>
+      <li><a href="#">Ссылка 10</a></li>
+    </ul>
+
+	<p>Первый параграф в body</p>
+	<p>Второй параграф в body</p>
+	<div>
+		<p>Первый параграф в div</p>
+		<span>Первый span в div</span>
+		<p>Второй параграф в div</p>
+		<span>Второй span в div</span>
+	</div>
+	<p>Текст в параграфе</p>
+	<p>Последний параграф в body</p>
+</body>
+</html>

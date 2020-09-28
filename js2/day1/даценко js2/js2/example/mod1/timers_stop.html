@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+<body>
+<button onclick="t1 = setTimeout(test1,5000)">
+  Запустить однократный с интервалом 5сек🕐
+</button>
+<button onclick="clearTimeout(t1)">
+  Остановить
+</button>
+<hr>
+<button onclick="t2 = setInterval(test1,5000)">
+  Запустить многократный с интервалом 5сек🕐 
+</button>
+<button onclick="clearInterval(t2)">
+  Остановить
+</button>
+
+<script>
+function test1(){ console.log((new Date()).toLocaleTimeString()); }
+</script>
+
+</body>
+</html>

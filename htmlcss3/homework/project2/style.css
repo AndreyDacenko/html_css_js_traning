@@ -1,0 +1,60 @@
+body {
+  margin: 0 10%;
+  padding: 0;
+}
+.nav {
+  list-style: none;
+  margin: auto;
+  margin-top: 15px;
+  padding: 0px;
+  text-align: left;
+  font-size: 30px;
+  padding-bottom: 15px;
+  border-bottom: 10px dashed #808080;
+}
+.nav li {
+  display: inline;
+  position: relative;
+}
+ul {
+  text-decoration: none;
+}
+.home {
+  font-weight: 700;
+}
+.about {
+  padding-left: 40px;
+}
+.search {
+  position: relative;
+  float: right;
+}
+.lupa {
+  padding: 5px 2px 5px 25px;
+  background: url("http://3.bp.blogspot.com/-4w14hQHr5yQ/Tgm6u7KwUkI/AAAAAAAACAI/Hu2poBOPx3g/s25/search.png") no-repeat;
+}
+.logo {
+  width: 550px;
+  height: 200px;
+  display: block;
+  margin: auto;
+}
+.menu {
+  margin-top: 50px;
+}
+.menu1 {
+  height: 500px;
+  width: 600px;
+  padding-right: 5px;
+}
+.menu2 {
+  height: 220px;
+  width: 250px;
+}
+.picture {
+  display: inline-block;
+  padding: 50px;
+  text-align: center;
+  width: 100px;
+  height: 100px;
+}

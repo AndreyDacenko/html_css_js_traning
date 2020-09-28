@@ -1,0 +1,92 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Сложная нумерация</title>
+<style type="text/css">
+#ul{
+ counter-reset: i 0;
+}
+
+#ul div{
+ margin: 0 0 0 40px
+}
+  
+#ul div:before{
+ counter-increment: i 1;
+ content: counter(i, upper-roman) '. ' ;  
+ counter-reset: k 0;
+}  
+  
+#ul span{
+ display: block;
+ margin: 0 0 0 20px;
+}
+  
+#ul span:before{
+ counter-increment: k 1;
+ content: counter(i) '.' counter(k) '. ';
+}
+  
+  ol{
+    list-style-type: none;
+    counter-reset: i 0;
+  }  
+  ol li:before{
+    counter-increment: i 1;
+    content: counter(i) '. ';
+  }
+  ol ol{
+    counter-reset: j 0;
+  }
+  ol ol li:before{
+    counter-increment: j 1;
+    content: counter(i) '.' counter(j) '. ' 
+  }
+  ol ol ol{
+    counter-reset: k 0;
+  }
+  ol ol ol li:before{
+    counter-increment: k 1;
+    content: counter(i) '.' counter(j) '.' counter(k) '. ' 
+  }
+</style>
+</head>
+<body>  
+  <div id="ul">
+	<div>Глава 
+		<span>Раздел</span>
+		<span>Раздел</span>
+	</div>
+	<div>Глава 
+		<span>Раздел</span>
+		<span>Раздел</span>
+		<span>Раздел</span>
+		<span>Раздел</span>
+	</div>
+  </div> 
+ <ol>
+	<li>Глава 
+		<ol>
+		<li>Раздел
+			<ol>
+			<li>Параграф</li>
+			<li>Параграф</li>
+			</ol>
+		</li>
+		<li>Раздел</li>
+		</ol>
+	</li>
+	<li>Глава 
+		<ol>
+		<li>Раздел
+			<ol>
+			<li>Параграф</li>
+			<li>Параграф</li>
+			</ol>
+		</li>
+		</ol>
+	</li>
+  </ol>
+</body>
+</html>

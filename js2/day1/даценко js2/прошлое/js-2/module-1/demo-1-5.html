@@ -1,0 +1,41 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<title>Новое окно</title>
+	<meta charset="utf-8">
+	<style type="text/css">
+		#demoLinks a { display: block; color: blue }
+	</style>
+	
+
+	<script type="text/javascript">
+
+		function add() {
+					var years = prompt('Сколько вам лет?', 'Я не такая');
+			if (years!==null) {
+					var d=document.querySelector('ul');
+				var newLi = document.createElement('li');
+  				newLi.innerHTML = years;
+  				d.appendChild(newLi);
+			}
+		}
+
+		function remove(){
+		var d=document.querySelector('ul > li:last-child');
+		var f=document.querySelector('ul');
+			f.removeChild(d);
+		}
+	</script>
+</head>
+
+<body>
+<ul>Часики 
+	<li>ивопись</li>
+	<li>пись</li>
+	<li>ись</li>
+	<li>сь</li>
+</ul>
+<a href="javascript:add()">добавить</a>
+<a href="javascript:remove()">delete</a>
+</body>
+</html>

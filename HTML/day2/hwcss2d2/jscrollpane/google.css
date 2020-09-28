@@ -1,0 +1,10 @@
+.google{
+    background: url(img/google.png);
+    display: inline-block;
+    width: 235px;
+    height: 200px;
+    position: absolute;
+    clip: rect(40px,320px,150px,140px);
+    margin-bottom: 100px;
+    clear: both;
+}

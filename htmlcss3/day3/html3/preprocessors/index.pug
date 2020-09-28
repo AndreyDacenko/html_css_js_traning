@@ -1,0 +1,29 @@
+-var p = "Preprocessors"
+-var path = "../images/"
+mixin business(b)
+    li.buis= b
+doctype html
+html
+    |
+    |
+    head
+        meta(charset="utf-8")
+        title= p
+        link(rel="stylesheet" href="style.css")
+    |
+    |
+    body
+        include header.pug
+        h1= p
+        .my-buis
+            ol
+                +business("learn pug")
+                +business("Learn styles")
+                +business("Sleeping in classes")
+        img(scr=path+"img.png" alt="image")
+        input(type="button" value="click" id="btn1")
+
+        label(for="btn1") Привет!
+        include footer.pug
+
+

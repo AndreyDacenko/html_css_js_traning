@@ -1,0 +1,66 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Фоновая картинка для элемента</title>
+<style type="text/css">
+  #d{
+    width: 500px;
+    height: 200px;
+    padding: 30px;
+    border: 20px dashed #ff3;
+    box-sizing: border-box;
+    background: #ff9 url(http://placehold.it/100x100/ffff99/999?text=HTML2) 0 0 no-repeat;
+    background:url(http://placekitten.com/200/100);
+    background-repeat: no-repeat;
+    background-origin: content-box;
+    background-origin: border-box;
+    background-origin: padding-box;
+    background-position: 45px 100px;
+    background-position: left bottom;
+    background-position: 50%;
+/*    background-size: 100% 100%;*/
+    background-size: cover;
+    background: 
+      url(http://placekitten.com/200/100) no-repeat 10px 20px,
+      url(http://placekitten.com/100/50) no-repeat 260px 80px,
+      url(http://placekitten.com/50/150) no-repeat 260px 120px
+      ;
+    background: linear-gradient(75deg,pink 10%, #369 95%);
+    background: linear-gradient(45deg,pink 50%, #369 50%);
+    background-origin: border-box;
+  }
+</style>
+<!-- [if IE]>
+<style type="text/css">
+ #d{ filter:progid:DXImageTransform.Microsoft.Gradient(GradientType=0,
+ StartColorStr='#0000FF', EndColorStr='#000000') }
+</style>
+<!--[endif]-->
+<!-- [if lte IE 7]>
+<style type="text/css">
+
+</style>
+<!--[endif]-->
+</head>
+<body>
+  <div id="flag"></div>
+  <style>
+    #flag{
+      width: 220px;
+      height: 150px;
+      background: linear-gradient(to bottom, #fff 33.33%, #00f 33.33%, #00f 66.66%, #f00 66.66%);
+      border: 1px solid #000;
+    }
+  
+  </style>
+  
+
+	<div id="d">
+        
+				Содержимое
+
+	</div>	  
+
+</body>
+</html>

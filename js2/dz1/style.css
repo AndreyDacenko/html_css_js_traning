@@ -1,0 +1,16 @@
+body{
+    background-color: greenyellow;
+
+}
+
+.form{
+    margin: auto;
+    width: 420px;
+    height: 120px;
+
+}
+string{
+    display: inline-block;
+    width: 200px;
+    padding-bottom: 7px;
+}

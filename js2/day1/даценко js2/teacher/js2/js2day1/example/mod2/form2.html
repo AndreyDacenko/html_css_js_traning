@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+<body>
+
+<form action="" onsubmit="return check()" >
+  <input type="text" name="i1" id="i1"/><br>
+  <input type="text" name="i2" id="i2"/><br>
+  <input type="text" name="i3" id="i3"/><br>
+  <input type="submit" />
+</form>
+<script>
+ function check(){
+   let form = document.forms[0];
+     
+   if( 
+     form.elements[0].value && 
+	 form.elements[1].value &&
+	 /^\+7\d{10}$/.test(form.elements[2].value )
+	 )	
+      return true;   
+	 
+   return false;
+ }
+ 
+ 
+</script>
+
+</body>
+</html>

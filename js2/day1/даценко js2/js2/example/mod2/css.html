@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+	<style>
+	#foo {
+	  width: 80px;
+	  height: 80px;
+	  border: 4px solid #333;
+	}
+	.foo{
+	  border-radius:3px;
+	  background: #b2d9b2;
+	}
+	.anima {
+	  animation: move 5s infinite;
+	}
+	@keyframes move {
+	  from{
+		transform: rotate(0deg);
+	  }  
+	  to{
+		transform: rotate(360deg);
+	  }
+	}
+	</style>
+</head>
+<body>
+<input type="button" value="Нажать"/><hr>
+<div id="foo" ></div>
+<script>
+
+</script>
+
+</body>
+</html>

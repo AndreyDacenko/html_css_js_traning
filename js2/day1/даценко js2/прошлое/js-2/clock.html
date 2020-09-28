@@ -1,0 +1,68 @@
+﻿<!DOCTYPE HTML>
+<html>
+<head>
+	<title>Новое окно</title>
+	<meta charset="utf-8">
+	<style type="text/css">
+		#demoLinks a { display: block; color: blue }
+	</style>
+	
+	<script type="text/javascript">
+		var clockWin;
+		var timer;
+		
+		function updateClock()
+		{
+			if (clockWin && !clockWin.closed)
+			{
+				var now = new Date();
+				
+				clockWin.document.open();
+				clockWin.document.write("<h1>"+
+					now.toLocaleTimeString()
+					+"</h1>")
+				clockWin.document.close();
+			}
+			else
+				stopClock();
+			
+		}
+		
+		function startClock()
+		{
+			
+			var w = 300;
+			var h = 150;
+			var x = (screen.width - w) / 2;
+			var y = (screen.height - h) / 2
+			
+			var params = `width=${w},height=${h},top=${y},left=${x}`;
+			clockWin = open('', 'clockWindow', params)
+			
+			if (!timer)
+				timer = setInterval( updateClock, 1000);
+		}
+		
+		function stopClock()
+		{
+			if (clockWin && !clockWin.closed)
+				clockWin.close();
+			
+			if (timer)
+				clearInterval(timer);
+				
+			clockWin = null;
+			timer = null;
+		}
+	</script>
+</head>
+
+<body>
+	<h1>Часики </h1>
+	<div id="demoLinks">
+		<a href="javascript:startClock()">Запустить часики</a><br/>
+		<a href="javascript:stopClock()">Остановить часики</a><br/>
+	</div>	
+
+</body>
+</html>

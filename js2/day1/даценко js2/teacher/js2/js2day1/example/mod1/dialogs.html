@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+<body>
+<h1>Диалоговые окна Window</h1>
+<ul>
+  <li onclick="alert('Уведомляем')">уведомление</li>
+  <li onclick="var t = confirm('Хорошо?'); console.log(t)">подтверждение</li>
+  <li onclick="var t = prompt('Введите','123'); alert(t)">ввод данных</li>
+  <li onclick="bmiDialog()">Индекс массы тела</li>
+</ul>
+<script>
+const bmi = (m, h) => m / (h ** 2);
+const bmiDialog = function(){
+  let m = parseFloat(prompt('Массу скажи','100'));
+  let h = parseFloat(prompt('Скажи длину','200'));
+  alert( bmi(m, h / 100) );
+}
+
+</script>
+
+
+
+
+</body>
+</html>

@@ -1,0 +1,26 @@
+.col {
+  height: 150px;
+  border-radius: 10px;
+}
+h1 {
+  color: #000;
+  text-align: center;
+}
+.item {
+  background: #0b2e13;
+}
+tbody {
+  background: orang;
+}
+.logo {
+  position: relative;
+  display: block;
+  margin: 0 auto;
+  text-align: center;
+  width: 80px;
+  height: 50px;
+}
+p {
+  text-align: center;
+  font-size: 2em;
+}

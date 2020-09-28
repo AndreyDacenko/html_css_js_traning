@@ -1,0 +1,92 @@
+doctype html
+html
+    head
+        meta(charset="utf-8")
+        meta(name="viewport" content="width=device-width,initial-scale=1.0")
+        link(rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css")
+        link(rel="stylesheet" href="style.css")
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    body
+        .container
+            .row
+                header.col-12
+                    h1.display-1.text-center  Я работаю с Bootstrap!
+                nav.col-12
+                    ul.nav.nav-tabs
+                        li.nav-item
+                            a.nav-link(href="") Ссылка 1
+                        li.nav-item.dropdown
+                            a.nav-link.dropdown-toggle(href="" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false") Ссылка 2
+                            .dropdown-menu
+                                a.dropdown-item(href="") Text
+                                a.dropdown-item(href="") Text
+                                .dropdown-divider
+                                a.dropdown-item(href="") Text
+                        li.nav-item
+                            a.nav-link.active(href="") Ссылка 3
+                        li.nav-item
+                            a.nav-link.disabled(href="") Ссылка 4
+                        li.nav-item
+                            a.nav-link(href="") Ссылка 5
+
+            .row
+                .col-12
+                    ul.list-unstyled.list-inline
+                        li.list-inline-item item 1
+                        li.list-inline-item item 2
+                        li.list-inline-item item 3
+                        li.list-inline-item item 4
+                        li.list-inline-item item 5
+                .col-12
+                    table.table.table-borderless.table-hover.table-dark
+                        tbody
+                            tr
+                                th Ячейка 1
+                                td Ячейка 2
+                                td Ячейка 3
+                            tr.bg-success
+                                th Ячейка 1
+                                td.table-success Ячейка 2
+                                td Ячейка 3
+                        thead.thead-light
+                            tr
+                                th Ячейка 1
+                                th Ячейка 2
+                                th Ячейка 3
+                .col-12
+                    form
+                        .form-group
+                            label(for="name") Ваше имя
+                            |&#032;
+                            input#name.form-control(type="text")
+                        .form-group
+                            label(for="pass") Ваш пароль
+                            |&#032;
+                            input#pass.form-control(type="password")
+                        .form-group.form-check
+                            input#check.form-check-input(type="checkbox")
+                            label.form-check-label(for="check") &#032;Выбери меня!
+                        .form-group.form-check
+                            input#rad.form-check-input(type="radio")
+                            label.form-check-label(for="rad") &#032;Я - радио!
+                        button.btn.btn-info(type="submit") Отправить
+            .row
+                .item.col.col-md-4.col-12
+                .item.col.col-md-4.col-12
+                .item.col.col-md-4.col-12
+                .col.col-12
+                    .container-fluid
+                        .row
+                            .col.col-6
+                            .col.col-6
+                .col.col-3
+                .col.col-3
+                .col.col-3
+                .col.col-3
+                .col.col-6
+                .col.col-6
+
+        script.
+            $('#dropdownMenuButton').dropdown()

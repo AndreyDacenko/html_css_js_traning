@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+<body>
+
+<form action="" >
+ <select name="sel" id="sel">
+  <option value=""></option>
+ </select>
+ <input type="button" value="Нажать"/>
+ 
+ 
+ <input type="button" value="Добавить ⬆" onclick="addOption(0)"/>
+  <select id="select">
+    <option value="2018">2018</option>
+	
+  </select>
+<input type="button" value="Добавить ⬇" onclick="addOption(1)"/>
+<input type="button" value="Очистить" onclick="clearSelect()"/>
+</form>
+
+<script>
+const monthNames = [ "Январь", "Февраль", "Март", "Апрель", "Май", "Июнь", "Июль", "Август","Сентябрь", "Октябрь", "Ноябрь", "Декабрь" ]
+const dayNamesMin = [ "Вс","Пн","Вт","Ср","Чт","Пт","Сб" ];
+
+function addOption(flag){
+
+let s = document.querySelector('#select'),o,year;
+if(!flag){
+year = +s[0].value+1;
+o = new Option(year,year,false,true);
+s.add(o,s[0]);
+}else{
+year = s[s.length-1].value-1;
+o = new Option(year,year,false,true);
+s.add(o,null);
+}
+}
+function clearSelect(){
+let s = document.querySelector('#select');
+while(s.length-1) s.remove(s[s.length-1]);
+}
+
+</script>
+
+</body>
+</html>

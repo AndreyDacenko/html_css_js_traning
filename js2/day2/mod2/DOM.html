@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+	<style>
+	div,p{
+	  padding: 10px;
+	  border: 1px dashed #888;
+	  margin: 2px;
+	  font: 1em sans-serif;
+	}
+	#target{
+	  background: #b9f;
+	}
+	</style>
+</head>
+<body>
+<input type="button" value="Нажать" onclick="work()"/> <input type="button" onclick="ce()" value="Создать"/><hr>
+<div>Lorem, ipsum.</div>
+<div>Exercitationem, magnam?</div>
+<div>Maxime, quas.</div>
+<div>
+  <p id="target">Lorem, ipsum.</p>
+  <p>Laborum, eos.</p>
+</div>
+<script>
+function work(){
+ //let p = document.getElementById('terget');
+ //let p = document.getElementsByTagName('p')[0];
+ //let p = document.querySelectorAll('#target')[0];
+   let p = document.querySelector('#target');
+   
+ 
+ //alert(p.firstChild.nodeType);
+ //alerrt(p.nextSibling);
+ //alert(p.parrentNode);
+ //console.log(p.nodeName);
+ p.firstChild.nodeValue = 'эники беники  ели вареники';
+ console.log(p.nodeValue);
+ console.log(p.firstChild.nodeName);
+ console.log(p.firstChild.nodeValue);
+ 
+ 
+ let frank = p.cloneNode(true);
+ frank.removeAttribute('id');
+ console.clear();
+ console.log(frank);
+ let div = p.parentNode;
+// div.appendChild(frank);
+
+//div.removeChild(p);
+
+let lorem = document.querySelector('div');
+document.body.insertBefore(frank,lorem);
+ }
+ 
+ 
+function ce(){
+let h2 = document.createElement('h2');
+let p  = document.createElement('p');
+
+h2.className = 'foo';
+h2.appendChild(document.createTextNode('Заголовок'));
+p.innerHTML = 'Текст текст';
+} 
+ 
+</script>
+
+</body>
+</html>

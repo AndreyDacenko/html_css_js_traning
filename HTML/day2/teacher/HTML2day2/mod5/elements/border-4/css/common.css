@@ -1,0 +1,47 @@
+body{
+ padding: 200px;
+ background: #f60
+}
+.border{
+ margin: 0 0 50px;
+ background: #ffc
+}
+.border .out{
+ padding: 20px
+}
+.border .png{
+
+}
+.border .lt{
+
+}
+.border .rt{
+
+}
+.border .lb{
+
+}
+.border .rb{
+
+}
+
+.wide{
+
+}
+.wide .content{
+
+}
+.wide .png{
+
+}
+.wide .lt, .wide .rt{
+
+}
+.wide .lb, .wide .rb{
+
+}
+
+
+
+
+

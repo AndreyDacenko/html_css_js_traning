@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+  <style>
+    #test{
+      width: 100px;
+      height: 100px;
+      background: rgba(120,140,180,.5);
+      border-radius: 100px;
+/*      animation: gladiolus 2s ease-out 1s infinite;*/
+      position: absolute;
+    }
+    @keyframes gladiolus{
+      /*from{
+        top: 0;
+        left: 10px;
+      }
+      to{        
+        top: 500px;
+        left: 200px;
+      }*/
+      0%{
+        top: 0;
+        left: 10px;
+      }
+      20%{
+        top: 0;
+        left: 180px;
+        background: #ff9;
+      }
+      70%{
+        border-radius: 10px;
+      }
+      100%{        
+        top: 500px;
+        left: 200px;
+      }
+    }
+    #phone{
+      width: 80px;
+      height: 80px;
+      background: rgba(255,200,170,.4);
+      position: fixed;
+      bottom: 100px;
+      right:100px;
+      color: #fff;
+      line-height: 80px;
+      text-align: center;
+      font-size: 50px;
+      border-radius: 80px;
+      animation: blink 1s linear .1s infinite;
+      text-decoration: none;
+    }
+    @keyframes blink{
+      from{
+        background: rgba(255,200,170,.2);
+      }
+      to{        
+        background: rgba(255,200,170,.7);
+      }
+    }
+  </style>  
+</head>
+<body>
+  <div id="test"></div>
+  <a id="phone" href='tel:+74957804750'>📞</a>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+</body>
+</html>

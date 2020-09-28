@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Селекторы псевдоклассов</title>
+<style type="text/css">
+div{
+ padding: 10px 50px;
+}
+/*:first-child :last-child :last-of-type :first-of-type*/
+
+    p:first-child{
+        background: #f96;
+    }
+    
+    p:last-child{
+        background: #69f;
+    }
+    
+    p:first-of-type{
+        font-size: 24px;
+    }
+    
+    p:last-of-type{
+        font-size: 24px;
+    }
+    
+    li:nth-child(2){background: pink;}
+    li:nth-child(odd){background: lightgreen;}
+    li:nth-child(even){background: yellow;}
+    
+    li:nth-child(2n){font-size: 30px}
+    li:nth-child(2n+1){font-size: 15px}
+    
+    .tb td:nth-child(2n+1){background: lightgreen;}
+    .tb td:nth-child(2n){background: yellow;}
+
+    .chess td{
+        background: #ffc;
+        text-align: center;
+    }
+    
+    .chess tr:nth-child(odd) td:nth-child(odd),
+    .chess tr:nth-child(even) td:nth-child(even){
+        text-align: center;
+        width: 40px;
+        height: 40px;
+        background: #369; color: #fff;
+    }
+    
+</style>
+</head>
+<body>
+  
+  <table class="chess">
+      <tr>
+          <td>1</td>
+          <td>2</td>
+          <td>3</td>
+          <td>4</td>
+          <td>5</td>
+          <td>6</td>
+          <td>7</td>
+          <td>8</td>
+      </tr>
+      <tr>
+          <td>1</td>
+          <td>2</td>
+          <td>3</td>
+          <td>4</td>
+          <td>5</td>
+          <td>6</td>
+          <td>7</td>
+          <td>8</td>
+      </tr>
+      <tr>
+          <td>1</td>
+          <td>2</td>
+          <td>3</td>
+          <td>4</td>
+          <td>5</td>
+          <td>6</td>
+          <td>7</td>
+          <td>8</td>
+      </tr>
+      <tr>
+          <td>1</td>
+          <td>2</td>
+          <td>3</td>
+          <td>4</td>
+          <td>5</td>
+          <td>6</td>
+          <td>7</td>
+          <td>8</td>
+      </tr>
+      <tr>
+          <td>1</td>
+          <td>2</td>
+          <td>3</td>
+          <td>4</td>
+          <td>5</td>
+          <td>6</td>
+          <td>7</td>
+          <td>8</td>
+      </tr>
+      <tr>
+          <td>1</td>
+          <td>2</td>
+          <td>3</td>
+          <td>4</td>
+          <td>5</td>
+          <td>6</td>
+          <td>7</td>
+          <td>8</td>
+      </tr>
+      <tr>
+          <td>1</td>
+          <td>2</td>
+          <td>3</td>
+          <td>4</td>
+          <td>5</td>
+          <td>6</td>
+          <td>7</td>
+          <td>8</td>
+      </tr>
+      <tr>
+          <td>1</td>
+          <td>2</td>
+          <td>3</td>
+          <td>4</td>
+          <td>5</td>
+          <td>6</td>
+          <td>7</td>
+          <td>8</td>
+      </tr>
+  </table> 
+  
+   <table class="tb">
+       <tr>
+           <td>Lorem ipsum dolor.</td>
+           <td>Dicta, iste, est?</td>
+       </tr>
+       <tr>
+           <td>Lorem ipsum dolor.</td>
+           <td>Esse soluta, optio!</td>
+       </tr>
+       <tr>
+           <td>Lorem ipsum dolor.</td>
+           <td>Nulla debitis, doloremque.</td>
+       </tr>
+       <tr>
+           <td>Lorem ipsum dolor.</td>
+           <td>Voluptates earum, repudiandae!</td>
+       </tr>
+       <tr>
+           <td>Lorem ipsum dolor.</td>
+           <td>Sint, alias, illum.</td>
+       </tr>
+       <tr>
+           <td>Lorem ipsum dolor.</td>
+           <td>Quod, tempora, sint?</td>
+       </tr>
+       <tr>
+           <td>Lorem ipsum dolor.</td>
+           <td>A, laboriosam, expedita.</td>
+       </tr>
+       <tr>
+           <td>Lorem ipsum dolor.</td>
+           <td>Molestias, id, distinctio?</td>
+       </tr>
+       <tr>
+           <td>Lorem ipsum dolor.</td>
+           <td>Consequuntur, iure, repellat!</td>
+       </tr>
+       <tr>
+           <td>Lorem ipsum dolor.</td>
+           <td>Qui, animi, quo!</td>
+       </tr>
+       <tr>
+           <td>Lorem ipsum dolor.</td>
+           <td>Voluptatum saepe, ipsam!</td>
+       </tr>
+       <tr>
+           <td>Lorem ipsum dolor.</td>
+           <td>Consequatur, maiores, optio?</td>
+       </tr>
+       <tr>
+           <td>Lorem ipsum dolor.</td>
+           <td>Necessitatibus, at, aspernatur.</td>
+       </tr>
+       <tr>
+           <td>Lorem ipsum dolor.</td>
+           <td>Rerum, cupiditate, maiores!</td>
+       </tr>
+       <tr>
+           <td>Lorem ipsum dolor.</td>
+           <td>Molestiae, qui, expedita.</td>
+       </tr>
+       <tr>
+           <td>Lorem ipsum dolor.</td>
+           <td>Cumque, ut, corporis!</td>
+       </tr>
+       <tr>
+           <td>Lorem ipsum dolor.</td>
+           <td>Expedita, maiores explicabo?</td>
+       </tr>
+       <tr>
+           <td>Lorem ipsum dolor.</td>
+           <td>Quae, mollitia, voluptate.</td>
+       </tr>
+       <tr>
+           <td>Lorem ipsum dolor.</td>
+           <td>Assumenda, neque praesentium.</td>
+       </tr>
+       <tr>
+           <td>Lorem ipsum dolor.</td>
+           <td>Quo, magnam, esse?</td>
+       </tr>
+       <tr>
+           <td>Lorem ipsum dolor.</td>
+           <td>Laudantium, ea at?</td>
+       </tr>
+       <tr>
+           <td>Lorem ipsum dolor.</td>
+           <td>Odio, maiores voluptates.</td>
+       </tr>
+       <tr>
+           <td>Lorem ipsum dolor.</td>
+           <td>Incidunt unde, mollitia?</td>
+       </tr>
+       <tr>
+           <td>Lorem ipsum dolor.</td>
+           <td>Iure, adipisci, odit.</td>
+       </tr>
+       <tr>
+           <td>Lorem ipsum dolor.</td>
+           <td>Labore ad, veniam!</td>
+       </tr>
+       <tr>
+           <td>Lorem ipsum dolor.</td>
+           <td>Iste, neque quaerat.</td>
+       </tr>
+       <tr>
+           <td>Lorem ipsum dolor.</td>
+           <td>Rem, quisquam, tempore.</td>
+       </tr>
+       <tr>
+           <td>Lorem ipsum dolor.</td>
+           <td>Placeat, culpa, autem.</td>
+       </tr>
+       <tr>
+           <td>Lorem ipsum dolor.</td>
+           <td>Facilis, commodi, provident.</td>
+       </tr>
+       <tr>
+           <td>Lorem ipsum dolor.</td>
+           <td>Porro, rem, recusandae.</td>
+       </tr>
+   </table>
+    ul>li*10>a[href=#]{Ссылка $}
+    <ul>
+        <li><a href="#">Ссылка 1</a></li>
+        <li><a href="#">Ссылка 2</a></li>
+        <li><a href="#">Ссылка 3</a></li>
+        <li><a href="#">Ссылка 4</a></li>
+        <li><a href="#">Ссылка 5</a></li>
+        <li><a href="#">Ссылка 6</a></li>
+        <li><a href="#">Ссылка 7</a></li>
+        <li><a href="#">Ссылка 8</a></li>
+        <li><a href="#">Ссылка 9</a></li>
+        <li><a href="#">Ссылка 10</a></li>
+    </ul>
+
+
+	<p>Первый параграф в body</p>
+	<p>Второй параграф в body</p>
+	<div>
+		<p>Первый параграф в div</p>
+		<span>Первый span в div</span>
+		<p>Второй параграф в div</p>
+		<span>Второй span в div</span>
+	</div>
+	<p>Текст в параграфе</p>
+	<p>Последний параграф в body</p>
+</body>
+</html>

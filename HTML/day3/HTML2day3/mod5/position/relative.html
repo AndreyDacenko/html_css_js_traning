@@ -1,0 +1,54 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Позиционирование relative</title>
+<style>
+  body{
+    margin: 30px;
+    position:relative;
+  }
+  
+#r{
+ float: left;
+ width: 200px; 
+ height: 200px;
+ margin: 10px;
+ background: #369;
+  
+ top:100px;
+ left: 150px;
+  
+ position:relative;  
+ position:absolute;  
+ position:fixed;  
+  
+ top:0;  
+ position:sticky;  
+ /*  position: inherit */
+  
+ transform: rotate(23deg) translate(10px, 20px ) rotate(23deg)  scale(2) 
+  
+  
+}
+#d{
+ font-size: 2em;
+ background: #ccf;
+}
+
+  
+  
+</style>
+</head>
+<body>
+
+
+<img src="http://placekitten.com/650x250" alt="">
+
+
+<div id="r"></div>
+  <div id="d">
+text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text text </div>	 
+
+</body>
+</html>

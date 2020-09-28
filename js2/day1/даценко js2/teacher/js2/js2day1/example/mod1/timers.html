@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+<body>
+<h1>Диалоговые окна Window</h1>
+<button onclick="n = setTimeout(test1,2000)">🕐через 2сек</button>
+<button onclick="clearTimeout(n)">остановка 🕐</button>
+<hr>
+<button onclick="m = setInterval(test1,2000)">🕐через 2сек</button>
+<button onclick="clearInterval(m)">остановка 🕐</button>
+<hr>
+
+<button onclick="setTimeout('test2()',3000)">🕐через 3сек</button>
+<button onclick="setTimeout(test3,4000,'⏰')">🕐через 4сек</button><br>
+<button onclick="setTimeout(test4,0)">🕐После загрузки страницы</button>
+<button onclick="setTimeout(test4,0)">🕐После загрузки страницы</button>
+<button onclick="setInterval(test5,5000)">🕐Каждые 5 сек</button>
+
+<script>
+function test1(){  alert("через 2000мс");}
+function test2(){  alert("через 3000мс");}
+function test3(a){  alert(a);}
+function test4(){  alert("Есть!");}
+function test5(){  console.log((new Date()).toLocaleTimeString());}
+</script>
+</body>
+</html>

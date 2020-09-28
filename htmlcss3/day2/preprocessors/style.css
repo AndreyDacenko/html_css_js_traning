@@ -1,0 +1,18 @@
+body {
+  margin: 0;
+  padding: 0;
+  background: rgba(0,85,120,0.314);
+}
+p {
+  border: 1px solid #fa5499;
+}
+p input {
+  background: #c71585;
+  border-radius: 10px;
+}
+header ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}

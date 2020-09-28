@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en" >
+
+<head>
+  <meta charset="UTF-8">
+  <title>React JS1</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+  <div id="app"></div>
+  <footer id="footer"></footer>
+  
+<script src='https://cdnjs.cloudflare.com/ajax/libs/react/16.2.0/umd/react.development.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/react-dom/16.2.0/umd/react-dom.development.js'></script>
+<script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
+
+<script src="https://unpkg.com/prop-types@15.6/prop-types.js"></script>
+
+<script src="js/data.js"></script>
+
+<script type="text/babel" src="js/AddBookForm.js"></script>
+<script type="text/babel" src="js/App.js"></script>
+<script type="text/babel" src="js/Basket.js"></script>
+<script type="text/babel" src="js/Book.js"></script>
+<script type="text/babel" src="js/BookWithoutPrice.js"></script>
+<script type="text/babel" src="js/SearchForm.js"></script>
+<script type="text/babel" src="js/Footer.js"></script>
+
+
+
+<script type="text/babel">
+//http://htmllab.ru/react/
+
+/*const element = <div>
+ <h3>Книга 1</h3>
+ <p>Автор: Нонейм</p>
+ <p>Цена: 200руб.</p>
+</div>;*/
+
+const formatPrice = price => price ? <b>{price}</b>:<del>&nbsp;</del>;
+
+/*const element2 = <div className='book'>
+ <h3>{dataBook[0]['title']}</h3>
+ <img src={'http://placehold.it/100x120?text='+dataBook[0]['title']} />
+ <p>Автор: {dataBook[0]['author']}</p>
+ <p>Цена: {formatPrice(dataBook[0]['price'])}руб.</p>
+</div>;*/
+
+const books = dataBook.map( book => <div className='book'>
+ <h3>{book['title']}</h3>
+ <img src={'http://placehold.it/100x120?text='+book['title']} />
+ <p>Автор: {book['author']}</p>
+ <p>Цена: {formatPrice(book['price'])}руб.</p>
+</div> );
+
+
+ReactDOM.render(
+ <App weight="100" height='200' />,
+ document.getElementById("app")
+);
+
+function tick() {
+  const element = (
+    <div>Copyright 2018 specialist.ru А.Тарасов {new Date().toLocaleTimeString()}.
+    </div>
+  );
+  ReactDOM.render(
+    element,
+    document.getElementById('footer')
+  );
+}
+setInterval(tick,1000);
+</script>
+
+
+</body>
+
+</html>

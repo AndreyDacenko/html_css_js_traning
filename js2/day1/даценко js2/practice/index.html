@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+<body>
+<h1>Диалоговые окна Window</h1>
+<ul>
+  <li onclick="iDialog()">Индекс массы тела</li>
+  
+</ul>
+<script>
+const i = (m,h) => m / (h ** 2);
+const iDialog = function(){
+  let m = parseFloat(prompt('Массу тела скажи','кг'));
+  let h = parseFloat(prompt('Длину тела скажи','см'));
+  alert( i(m, h / 100));
+
+
+}
+</script>
+
+
+
+
+</body>
+</html>

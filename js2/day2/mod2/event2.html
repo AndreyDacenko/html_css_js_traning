@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+<body>
+
+<h1 id=h1>Заголовок</h1>
+<div id=div1> </div>
+<input type="button" value="Нажать1" onclick='work()' />
+<input type="button" value="Нажать2" id=btn2 />
+
+<script>
+function work(){
+  alert(this);
+}
+var btn2 = document.querySelector('#btn2');
+btn2.onclick = work;
+btn2.onclick = function(){
+alert('Печенька');
+}
+</script>
+</body>
+</html>

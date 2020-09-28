@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+<body>
+<a href="javascript:log('Привет!')">Нажать</a>
+<ul>
+  <li onclick="log(window.navigator)">Navigator
+  <li onclick="log(window.screen)">Screen
+  <li onclick="log(window.history)">History
+  <li onclick="log(window.location)">Location
+  <li onclick="log(window.document)">Document
+</ul>
+<script>
+function log(el){
+  console.clear();
+  console.log(el);
+}
+</script>
+</body>
+</html>

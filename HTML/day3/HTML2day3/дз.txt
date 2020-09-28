@@ -1,0 +1,40 @@
+﻿1 написать стили, для оформления ссылок ведущих на сайты основных социальных сетей (+спрайты!)
+
+2 создать свои красивые флажки и радиокнопки https://www.youtube.com/watch?v=BxOeORdrhbE
+
+3* https://habr.com/company/yandex/blog/430560/
+
+4 создать у всех параграфов на странице псевдоэлемент неотличимый от гиперссылки в конце текста
+
+https://vk.com/htmllab
+
+
+ДЗ день 2
+1 Прикрутить jscrollpane
+2 Подключить reset.css (см инет)
+3 Создать горизонтально меню на странице с эффектом "залипания"
+4 показать букву "о" из спрайта Google
+5 создать форму диспетчера на сайте
+
+
+ДЗ день 3
+1 создать у табличного меню выпадающее подменю
+2 создать "3D" ссылки https://www.youtube.com/watch?v=YrKY_HPdAm4
+3 прикрутить выбор цвета в форме
+4 создать плавающие метки https://codepen.io/htmllabru/pen/qQEGex
+5 посмотреть https://www.os-templates.com/free-psd-templates/student-education на ночь
+
+Просто так)
+https://www.youtube.com/watch?v=DcMkZjoSvRs
+
+
+
+https://www.os-templates.com/free-website-templates/glozzom +
+https://www.os-templates.com/free-psd-templates/bikeshop +
+https://www.os-templates.com/free-website-templates/kelaby ++++
+https://www.os-templates.com/free-psd-templates/student-education ++++++
+дефолтный +
+
+
+
+

@@ -1,0 +1,28 @@
+.menu {
+    display: table;
+    width: 100%;
+    line-height: 36px;
+    background-color: lightblue;
+    margin: 0px;
+    padding: 0px;
+    text-align: center;
+}
+.menu > li {
+    float: none;
+    width: auto;
+    display: table-cell;
+    text-align: center;
+    list-style-type: none;
+    vertical-align: bottom;
+    border-left: 1px solid #fff;
+}
+.menu > li > a {
+    overflow: hidden;
+    color: black;
+    text-decoration: none;
+    height: 36px;
+    display: block;
+}
+.menu_small li {
+    text-align: left;
+}

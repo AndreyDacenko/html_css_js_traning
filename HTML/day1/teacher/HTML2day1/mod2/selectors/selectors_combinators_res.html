@@ -1,0 +1,36 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Комбинации селекторов</title>
+<style type="text/css">
+/*
+strong{
+ font-size: 3em;
+ color: #f30;
+}
+*/
+
+/* Контекстный селектор - предки-потомки */
+div strong{border: 5px dotted #f60}
+
+/* Дочерний селектор - родитель-ребенок */
+div > strong{font-family: sans-serif}
+
+/* Смежный селектор - ближайший смежный элемент сверху в коде */
+h1 + *{background: #ffc}
+
+/* Смежный селектор - любой смежный элемент сверху в коде */
+h1 ~ *{padding: 1em;}
+</style>
+</head>
+<body>
+	<div>
+	 <h1>Заголовок</h1>
+	 <p><strong>Первый</strong> параграф в div</p>
+	 <p><strong>Второй</strong> параграф в div</p>
+	 <strong>Просто полужирный текст в div</strong>
+	</div>
+	<p><strong>Первый</strong> параграф в body</p>
+</body>
+</html>

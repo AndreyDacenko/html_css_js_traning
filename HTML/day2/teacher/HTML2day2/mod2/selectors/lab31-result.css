@@ -1,0 +1,92 @@
+body {
+	background: #FFF;
+	margin: 0;
+}
+/* Верх */
+#header {
+	background: #EEE;
+	padding: 4px 20px;
+	border-bottom: 3px double #000;
+}
+#top_text {
+	color: green;
+}
+#header img {
+	float: left;
+	margin-right: 15px;
+}
+h1 {
+	font-size: 14pt;
+}
+/* Основная часть */
+tr {
+	vertical-align: top;
+}
+#left {
+	width: 75%;
+}
+td {
+	padding: 4px 8px;
+}
+/* Основная часть (слева) */
+h2 {
+	font-size: 14pt;
+	margin: 0;
+}
+div.text {
+	text-indent: 2em;
+	margin-bottom: 1em;
+	text-align: justify;
+}
+td img {
+	float: right;
+	margin-left: 15px;
+}
+a.select {
+	background: #EEE;
+	padding: 0 8px;
+	font-size: 120%;
+}
+.bold {
+	font-weight: bold;
+	color: red;
+}
+/* Основная часть (справа) */
+#right{
+	background: #DDD;
+	font-size: 75%;
+}
+h3 {
+	text-indent: 0;
+	text-align: left;
+	font-size: 11pt;
+	margin-bottom: 0;
+}
+div.news {
+	text-indent: 2em;
+	margin-bottom: 1em;
+	text-align: justify;
+}
+#right > div {
+	border-bottom: 1px solid #000;
+}
+a + div {
+	font-weight: bold;
+	text-align: right;
+}
+div + a {
+	text-decoration: none;
+	font-size: 12pt;
+}
+/* Низ */
+#footer {
+	background: #EEE;
+	border-top: 3px double #000;
+	border-bottom: 0px double #000;
+	font-size: 10pt;
+	padding: 6px;
+}
+h4 {
+	margin: 0;
+	text-align: center;
+}

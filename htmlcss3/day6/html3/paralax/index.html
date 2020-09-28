@@ -1,0 +1,27 @@
+<!DOCTYPE html><html><meta charset="utf-8"><title>Paralax</title><style>.box {
+    height: 100vh;
+    overflow-x: hidden;
+    overflow-y: auto;
+    perspective: 1px;
+    transform-style: preserve-3d;
+}
+.page{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    text-align: center;
+    line-height: 100vh;
+}
+.page1{
+    transform: translateZ(0);
+    background: rgba(0,255,40,.8);
+    font: 30px;
+}
+.page2{
+    transform: translateZ(-1px) scale(5);
+    background: rgba(0, 40, 255, .8);
+    font: 30px;
+}
+</style></html><body><div class="box"><div class="page page1">Привет мир!</div><div class="page page2">Здарова очередняра!</div></div></body>

@@ -1,0 +1,14 @@
+.col {
+  height: 150px;
+  border: 1px solid #f00;
+  border-radius: 10px;
+}
+h1 {
+  color: #f00;
+}
+.item {
+  background: #0b2e13;
+}
+tbody {
+  background: #ffa500;
+}

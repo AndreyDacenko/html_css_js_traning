@@ -1,0 +1,40 @@
+.daddy
+  width: 500px
+  height: 500px
+  border-radius 50%
+  background: yellow
+  position: relative;
+  margin 200px auto;
+  display: flex
+  justify-content: center
+  align-items: center
+  perspective none
+  perspective-origin 50% 50%
+  animation rotate 5s infinite linear
+  transform-style preserve-3d
+.child
+  width 200px
+  height: 100px
+  background green
+  position: absolute
+.c1
+  transform rotateY(80deg) translateX(100px)
+  background: red
+.c2
+  background: gray
+  transform transitionX(20px)
+.c3
+  background: blue
+  transform rotateY(-80deg)  translateX(-100px)
+.c4
+  background: black;
+  transform  rotateY(260deg) translateX(100px)
+.c5
+  background: green;
+  transform rotateY(-260deg) translateX(-100px)
+  
+@keyframes rotate {
+  100% {
+    transform rotateY(360deg) rotateX(360deg)
+  }
+}

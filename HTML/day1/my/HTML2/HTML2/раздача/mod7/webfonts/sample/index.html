@@ -1,0 +1,32 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Display inline</title>
+<style>
+ html{
+  font-size: 2em;
+ }
+.left{
+/*display: inline;*/
+float: right;
+width: 200px;
+height: 50px;
+background: #ccf;
+}
+span{
+ background: #cfc;    /* font-family: 'times new roman', times, serif;
+ font-size: 2em;
+ line-height: normal;/*3em размер полученного шрифта*/
+ font-style: italic;
+ font-weight: normal /*400 и 600*/
+ font-variant: small-caps;*/
+ font: italic 2em/1.5em 'times new roman', times, serif;
+}
+</style>
+</head>
+<body>
+
+ <span>Since conditional comments use the HTML comment structure, they can only be included in HTML files, and not in CSS files. I'd have preferred to put the special styles in the CSS file, but that's impossible. You can also put an entire new tag in the conditional comment referring to an extra style sheet. </span><div class="left">  </div>
+</body>
+</html>

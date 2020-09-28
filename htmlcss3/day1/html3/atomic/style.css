@@ -1,0 +1,39 @@
+.m-0a {
+    margin: 0 auto;
+}
+.b-1 {
+    border: 1px solid;
+}
+.bc-red {
+    border-color: #f00;
+}
+.p-10 {
+    padding: 10px;
+}
+.fs-2 {
+    font-size: 2rem;
+}
+.fs-1 {
+    font-size: 1rem;
+}
+.c-dblue {
+    color: darkblue;
+}
+.c-lblue {
+    color: lightblue;
+}
+.c-black {
+    color: #000;
+}
+.c-red {
+    color: #f00;
+}
+.c-grey {
+    color: #e6e6e6;
+}
+.fw-300 {
+    font-weight: normal;
+}
+.fw-600 {
+    font-weight: bold;
+}

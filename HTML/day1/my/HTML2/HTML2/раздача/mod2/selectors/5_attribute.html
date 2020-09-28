@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Селекторы атрибутов</title>
+<style type="text/css">
+    [href]{padding-left: 20px;
+           background: url(ico_mini_v.png) no-repeat;
+             position: relative;
+    }
+     [href$='.txt']{
+           background-position: 0 -20px;
+    }
+     [href$='.xml']{
+           background-position: 0 -40px;
+    }
+    
+</style>
+</head>
+<body>
+	<p><a href="selectors.html">Просто</a>
+	  <a href="new.txt">текст</a> в 
+	  <a href="/docs/test.xml">параграфе</a></p>
+	<p title="">Параграф с пустым title</p>
+	<p title="Александр Овечкин">Параграф с title "Александр Овечкин"</p>
+	<div title="Александр Пушкин">Блок с title "Александр Пушкин"</div>
+	<p title="Александрийский маяк">Параграф с title "Александрийский маяк"</p>
+</body>
+</html>

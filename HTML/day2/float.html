@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+  <style>
+    #foo{
+      width: 100px;
+      height: 100px;
+      background-color: pink;
+      float: left;
+    
+    }
+    .right{
+      float: right;
+    }
+    
+    .container{
+      width: 300px;
+      box-sizing: content-box;
+      border: 1px solid #000;
+    }
+    .container:after{
+      content: "";
+      display: block;
+      clear: both;
+    }
+    .cols{
+      border: 1px solid green;
+      box-sizing: border-box;
+      width: 33.33%;
+      float: left;
+    }
+    footer{
+      clear: both
+    }
+    
+  </style>
+</head>
+<body>  
+  <span id=foo>Привет</span>
+  
+  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor sint adipisci laborum officiis eveniet, nostrum possimus incidunt nihil quod tempore nulla dignissimos <img src="http://placehold.it/220x120" class='right' alt=""> architecto accusamus consequuntur deserunt, nesciunt non illum voluptates autem. Doloremque velit beatae sed reprehenderit quisquam. Quidem, dolores facilis!</p>
+  
+  .container>.col$.cols*3>lorem10
+  <div class="container">
+    <div class="col1 cols">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa, temporibus.</div>
+    <div class="col2 cols">Debitis quae dignissimos reprehenderit asperiores illo soluta, eos, nostrum nisi.</div>
+    <div class="col3 cols">A at, veritatis dolore repellendus vel, cumque pariatur cupiditate temporibus.</div>
+<!--
+    <footer>Подвал
+    </footer>
+-->
+  </div>
+  
+  
+  
+</body>
+</html>

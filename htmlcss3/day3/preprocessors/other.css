@@ -1,0 +1,7 @@
+ul,
+ol {
+  list-style-type: none;
+}
+li {
+  background-color: green;
+}

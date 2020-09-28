@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+<body>
+
+<form action="" >
+  <input type="text" name="i1" id="i1"/><br>
+  <input type="text" name="i2" id="i3"/><br>
+  <input type="submit" />
+  <input 
+  type="button" 
+  value='Отправить2'
+  onclick="send()" />
+</form>
+
+<script>
+function send(){
+	let form = document.forms[0];
+	if( confirm('Точно?'));
+		form.submit();
+		console.log(form.elements[0]);
+		form.elements[0].value = '>;D';
+}
+
+</script>
+
+</body>
+</html>

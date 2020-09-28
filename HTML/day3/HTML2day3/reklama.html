@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+  <style>
+    #test{
+      background: green;
+      width: 220px;
+      height: 150px;
+      position: fixed;
+      bottom: -100px;
+      right: 100px;      
+    }
+    #test .close{ display: none; }
+    #test:target{
+      bottom: 0;      
+    }
+    #test:target .close{ display: inline; }
+  </style>
+</head>
+<body>
+  <a href="#test">Показать</a>
+  <div id="test"><a href="#" class='close'>Закрыть</a></div>
+</body>
+</html>

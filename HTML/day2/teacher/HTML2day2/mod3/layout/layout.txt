@@ -1,0 +1,18 @@
+Layout model
+hasLayout
+
+html, body
+table, tr, th, td
+img, iframe, object, embed
+hr
+input, select, textarea, fieldset, legend
+
+width, height		!auto
+float				!none
+zoom				!normal IE only
+writing-mode		tb-rl IE only
+display				inline-block (сбросить невозможно)
+
+max-height, max-width	!none	IE7
+min-height, min-width	!auto	IE7 (такого значения нет)
+

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+<body>
+<button onclick="winOpen()">Окно!</button>
+<button onclick="winMove()">Движение</button>
+<button onclick="winSize()">Размеры</button>
+<button onclick="winClose()">Закрой окно</button>
+
+<script>
+let win;
+const winOpen = () => {
+  let
+    W = screen.width,
+	H = screen.height,
+	w = 300,
+	h = 100;
+	
+win = open('','win',`width=${w},height=$,left=${(W-w)/2},top=${(H-h)/2}`);
+
+setInterval(function(){
+if (!win || win.closet) return;
+win.document.write(new Date().toLocaleTimeString());
+win.document.title = 'Часы'
+win.document.close();
+},1000);
+}	
+const winMove = () => {
+if(win && !win.closed)
+  // win.moveTo(200,300);
+  win.moveBy(30,30);
+}
+const winSize = () => {
+  win.resizeTo(200,100);
+}
+const winClose= () => {
+  win.close();
+}
+
+
+
+
+</script>
+
+</body>
+</html>

@@ -1,0 +1,12 @@
+
+
+			I		II				III
+!important
+style
+			#id		.class			tags
+					:pseudo-class 	::pseudo-elemenets
+					[attributes]
+                    
+div#some.foo      111
+.some.foo.qwerty  030
+.some.foo.qwerty !important 1030

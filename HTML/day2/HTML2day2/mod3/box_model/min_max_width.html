@@ -1,0 +1,50 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Минимальная и максимальная ширина</title>
+<style type="text/css">
+#out{
+ background: #69c;
+ padding: 20px;
+ min-width: 1000px;
+ max-width: 1200px;
+ margin: auto;
+}
+#in {
+ height: 100px;
+ background: #ccf;
+ overflow: hidden;
+/* overflow: scroll;
+ overflow: auto;
+ overflow-x: scroll;
+ overflow-y: hidden;*/
+/*  background: linear-gradient(to bottom,#ccf 85%, #000 100%);*/
+}
+  #out{
+    position:relative
+  }
+  #in:after{
+    content:"";
+    display:block;
+    height: 10px;
+    width: 100%;
+    /*border: 1px solid #000;*/
+    background: linear-gradient(to bottom, transparent, #fff);
+    background: linear-gradient(to bottom, transparent, #ccf);
+    position:absolute;
+    left:20px;
+    top:calc(100% - 28px);
+    
+  }
+</style>
+</head>
+<body>
+	<div id="out"> 
+		<div id="in"> 
+	 
+	Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis tempore nisi, voluptatum in ratione accusamus commodi reiciendis ad fugiat assumenda voluptatem ducimus dicta e Lorem ipsum dolor sit amet, consectetur adipisicing elit. Id minus ab commodi ratione laudantium vel accusantium, iste eligendi alias expedita beatae dolores optio inventore fugiat deleniti quidem non dolorem possimus eius unde provident nihil itaque enim earum! Necessitatibus vitae dolores vero officiis architecto, eos pariatur incidunt quas nam nostrum temporibus fugiat error eaque, quasi deleniti provident porro sunt voluptates delectus voluptatem odit. Autem repellendus dolores obcaecati molestias dolorem in beatae eligendi labore totam corporis aut quae aperiam impedit quas voluptatibus hic, sequi architecto unde, earum ipsum libero, quos placeat praesentium! Ab ipsa temporibus neque velit, odit delectus aliquam deserunt assumenda ducimus nobis architecto corrupti vitae voluptates consequuntur eveniet hic, soluta dolor sint aut totam similique! Ut blanditiis doloremque, corporis laudantium illum laborum repudiandae impedit? Minima consequatur vitae qui aut praesentium, laborum itaque perferendis dolorem earum ducimus illo modi sed laboriosam, eum nulla repellendus molestias voluptate nostrum pariatur asperiores vero perspiciatis quas ipsum rerum. Voluptatibus impedit consequuntur veniam suscipit dolores nam non id laborum, autem possimus temporibus totam, asperiores. Provident deserunt, ea numquam nostrum voluptas dignissimos delectus eligendi natus, ipsa eaque ipsum ipsam eveniet cumque sed explicabo, iure asperiores nisi, officia quas soluta voluptatem recusandae iusto. Doloremque odio ratione harum, rerum.
+		</div>
+	</div>
+</body>
+</html>

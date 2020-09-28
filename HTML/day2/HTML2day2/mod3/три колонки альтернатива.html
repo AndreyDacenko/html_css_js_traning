@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+  <style>
+    * {      font-family: sans-serif; margin: 0; padding: 0   }
+    html,body,.container{      height: 100%;    }
+    body{      margin: 0;      background: #aaa;    }
+    .container{
+      width: 600px;
+      margin: auto;
+      border: 1px solid red;
+      background: #ffc;
+    }
+    main{      min-height: 100%;    }
+    .cols{
+      padding-bottom: 130px;
+      background: #ffc;
+    }
+    footer{
+      margin-top: -100px;
+      height: 100px;
+      background: lime;
+    }
+    
+    /*колонки*/
+    main:after{
+      content: "";
+      display: block;
+      clear: both;
+    }
+    .cols{
+      overflow: hidden;
+    }
+    .col{
+      width: 33%;
+    }
+    .col1{
+      float: left;
+    }
+    .col2{
+      float: right;
+    }
+    .col3{
+      margin: 0 33%;
+    }
+  </style>
+</head>
+<body>
+<!-- https://codepen.io/anon/pen/rQZBzE
+  .container>(main>.cols>h1{Заголовок}+p>lorem100)+footer{Подвал}-->
+  <div class="container">
+    <main>
+<!--      .container>main>.cols>.col.col$*3>h1{Заголовок}+p>lorem100-->
+     <div class="cols">
+      <div class="col col1">
+        <h1>Заголовок 1</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere minus quo odio ad adipisci quaerat earum impedit molestiae ea quisquam eum consectetur aut non labore rem optio eligendi, corporis quod quasi minima reprehenderit. Explicabo neque dolorum enim quaerat harum architecto ut debitis, voluptatibus consectetur possimus fuga alias ullam facilis atque, totam porro magni esse quis quasi ipsam eum cumque excepturi. Inventore non placeat repudiandae, recusandae nulla fugit quis fugiat atque explicabo doloribus voluptatem obcaecati, minus? Excepturi id, velit! Ad molestias illo nesciunt voluptates ab in nam incidunt commodi, deserunt adipisci natus quae, asperiores, iusto aut quaerat mollitia eveniet, voluptatem libero.</p>
+        
+      </div>
+      <div class="col col2">
+        <h1>Заголовок 2</h1>
+        <p>Asperiores, a, quod! Nihil accusantium voluptatibus, non hic a quisquam laborum, deserunt animi maxime quasi maiores modi reiciendis ipsa magni veniam! Soluta odio dolorem, magnam architecto eligendi, dolores commodi necessitatibus culpa facilis porro natus obcaecati aliquid voluptatem quidem ea dolore praesentium distinctio dolor eveniet. Minus dolorem quia, explicabo aut. Doloremque sint, fuga quis tenetur numquam? Suscipit debitis, consectetur magni et voluptatem, dolor rerum unde iusto doloremque sapiente incidunt, veritatis! Pariatur architecto minus sunt beatae, voluptates. Deleniti eveniet quos veniam, magnam enim consectetur nemo excepturi vero provident fuga possimus? Facilis tenetur modi quos harum fugiat eius cupiditate quaerat nesciunt. Sit, accusantium. lorem100</p>
+      </div>
+      <div class="col col3">
+        <h1>Заголовок 3</h1>
+        <p>Asperiores dicta minima autem. Magnam qui molestias assumenda praesentium autem, distinctio nisi aperiam nesciunt dolores, itaque totam quaerat architecto, quae sit esse explicabo? Quisquam, et, dicta. Fugit sed itaque delectus quidem consequatur neque deleniti repellendus qui ex quas iusto commodi unde culpa iure explicabo tempore vitae iste earum, soluta pariatur vero est expedita dolores nam in. Id quidem, sunt distinctio fugiat repudiandae assumenda aliquam, expedita voluptas reprehenderit libero, eaque! Nesciunt molestiae cupiditate eligendi aliquam quo necessitatibus libero, quia sint quam ad deserunt cum facilis repellat ea iusto id sapiente quos voluptas tempore veritatis quasi doloribus commodi. Eius aut quas, aspernatur.</p>
+      </div>
+      </div>
+    </main>
+    <footer>Подвал</footer>
+  </div>
+</body>
+</html>

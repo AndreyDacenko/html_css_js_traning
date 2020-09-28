@@ -1,0 +1,34 @@
+doctype html
+html
+    meta(charset="UTF-8")
+    title Parallax
+    style.
+        .box {
+            height: 100vh;
+            overflow-x: hidden;
+            overflow-y: auto;
+            perspective: 1px;
+        }
+        .page {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            text-align: center;
+            line-height: 100vh;
+        }
+        .page1 {
+            transform: translateZ(0);
+            background: rgba(0,255,40,.8);
+            font: 30px/100vh sans-serif;
+        }
+        .page2 {
+            transform: translateZ(-1px) scale(10);
+            background: rgba(0, 40, 255, .8);
+            font: 30px/100vh sans-serif;
+        }
+body
+    .box
+        .page.page1 Привет мир!
+        .page.page2 Меня трудно найти, легко потерять, невозможно забыть!

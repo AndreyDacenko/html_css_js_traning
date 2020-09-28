@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Комбинации селекторов</title>
+<style type="text/css">
+  div{ border: 1px solid #000;  }
+  p  { 
+   border: 1px solid red;
+   margin: 10px;
+  }
+  
+/*Контекстный селектор - предки-потомки
+div strong{color:#0f0;}
+td td{}
+*/
+div strong{color:#0f0;}
+  
+/*Дочерний селектор - родитель-ребенок
+div > strong{color:#0f0;}
+*/
+div > strong{color:pink;}
+  
+/*Соседний селектор - ближайший сосед слева
+h1 + p{color:#0f0;}
+*/
+h1 + p{  background-color: #f63;}
+  
+/*Соседний селектор - любой сосед слева*/
+
+h1 ~ p{color:#0f0;}
+
+
+  input:checked + label{
+    background: pink;
+  }
+</style>
+</head>
+<body>
+
+<input type="checkbox" name="" id="w">
+<label for="w">согласны на все</label>  
+
+	<div>
+		<h1>Заголовок</h1>
+		<p><strong>Первый</strong> параграф в div</p>
+		<p><strong>Второй</strong> параграф в div</p>
+		<strong>Просто полужирный текст в div</strong>
+	</div>
+	<p><strong>Первый</strong> параграф в body</p>
+</body>
+</html>

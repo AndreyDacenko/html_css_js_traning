@@ -1,0 +1,47 @@
+#rek_blocker {
+    display: none;
+    position: fixed;
+    bottom: -200px;
+    left: 0;
+    right: 0;
+    z-index: 10;
+    padding: 15px 0;
+    background: #ff0000;
+    box-shadow: 0 0 20px #555;
+    color: #fff;
+    transition: bottom ease .5s;
+    transition-delay: 2s;
+}
+#rek_blocker.active {
+    display: block;
+    bottom: 0;
+}
+#rek_blocker .descr {
+    position: relative;
+}
+#rek_blocker .title {
+    font-weight: bold;
+}
+#rek_blocker .bclose {
+    padding-top: 10px;
+}
+#rek_blocker .bclose button {
+    padding: 8px 12px;
+    background: transparent;
+    border: 1px solid #fff;
+    color: #fff;
+    cursor: pointer;
+}
+[class*="ms-col-"] {
+    float: left;
+    width: 100%;
+    position: relative;
+    margin: 0;
+    padding-left: 1em;
+    padding-right: 1em;
+    padding-left: 1vw;
+    padding-right: 1vw; }
+[class*="ms-col-"].centered {
+    float: none;
+    margin-left: auto;
+    margin-right: auto; }
